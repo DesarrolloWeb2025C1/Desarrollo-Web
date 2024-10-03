@@ -33,4 +33,8 @@ este repositorio contiene los recursos de **desarrollo web 2024**, con material 
 - diseño responsivo utilizando **media queries**.
 - carrusel 3D
 - buenas prácticas con separación de estilos y scripts.
+<<<<<<< HEAD
 - ejemplos de manipulación del DOM con JavaScript.
+=======
+- ejemplos de manipulación del DOM con JavaScript.
+>>>>>>> 2527aa1cbc60de77dd760bd3e45b3cff3176d366
