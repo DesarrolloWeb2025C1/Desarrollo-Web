@@ -1,0 +1,348 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #c5e2f6;
+    text-align: center;
+
+}
+
+header
+{
+	width: 100%;
+	color: #0C0817;
+	text-align: center;
+	font-size: 100%;
+	padding-top: 0.1em;
+	padding-bottom: 0.02em;
+}
+
+
+    .css-button-rounded--grey {
+        min-width: 120px;
+        height: 40px;
+        color: #008cc4;
+        padding: 5px 50px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #c5e2f6;
+        background: #c5e2f6;
+        text-decoration: none;
+        text-align: center;
+      }
+      .css-button-rounded--grey:hover {
+        background: #fff;
+        color: #008cc4;
+      }
+   
+
+.container {
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #008cc4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0d2d68;
+}
+
+.hidden-content {
+    display: none;
+    margin-top: 10px;
+    background-color: #e7f3fe;
+    padding: 10px;
+    border: 1px solid #b3d7ff;
+    border-radius: 5px;
+    text-align: left;
+
+}
+
+#ejercicios ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#css ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.resources {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.resources h3 {
+    margin-top: 0;
+}
+
+.resources a {
+    color: #008cc4;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+#github ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  height: 400px; /* Ajusta la altura según sea necesario */
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+
+.carousel {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 110%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+
+/* clases extra - carrusel 3d */
+  }@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap");
+
+  .contenidogral {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+  
+  img {
+    display: block; 
+    margin: 0 auto; 
+    width: 90%; 
+    height: auto; 
+}
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-carrossel {
+    --widthItem: 150px;
+    --heightItem: 150px;
+    width: var(--widthItem);
+    height: var(--heightItem);
+    perspective: 1000px;
+  }
+  
+  .carrossel {
+    --rotatey: 0;
+    font-size: 4rem;
+    position: relative;
+    transform: rotatey(var(--rotatey));
+    transform-style: preserve-3d;
+    user-select: none;
+    cursor: grab;
+  }
+  
+  .carrossel-item {
+    opacity: 0.5;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: opacity 0.5s;
+  }
+  
+  .carrossel-item:hover {
+    opacity: 1;
+  }
+  
+  .carrossel,
+  .carrossel-item {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prev,
+   .next {
+   align-items: flex-end;
+   justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: none; 
+    padding: 15px 15px; 
+    cursor: pointer; 
+    z-index: 10; 
+    border-radius: 5px; 
+}
+    
+  .carrossel-item:nth-child(1) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: linear-gradient(-229deg, #029aff, #ffffff);  
+  }
+  
+  .carrossel-item:nth-child(2) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: linear-gradient(-229deg, #ffffff, #02ffff);
+  }
+  
+  .carrossel-item:nth-child(3) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: linear-gradient(-229deg, #ffffff, #75807e);
+  }
+  .carrossel-item:nth-child(4) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: linear-gradient(-229deg, #ffffff, #6dfd79);
+  }
+  
+  .carrossel-item:nth-child(5) {
+    --rotate: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: linear-gradient(-229deg, #ff9696, #aaff95);
+  }
+  
+  .carrossel-item:nth-child(6) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: linear-gradient(-229deg, #ffffff, #ffa600);
+  }
+  
+  @media screen and (min-width: 576px) {
+    .container-carrossel {
+      --widthItem: 250px;
+      --heightItem: 200px;
+    }
+  }
+  
+/* utec */
+
+.container-utec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #333333;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .container-utec {
+    align-items: center;
+      grid-template-columns: 1fr; 
+
+  }
+
+  .box {
+      padding: 15px; 
+  }
+ p {
+  font-size: 12px ;
+}
+  h2 {
+      font-size: 90%; 
+  }
+li{
+  font-size: 12px;
+}
+  ul {
+      margin-left: 10px; 
+  }
+}
+
+
+

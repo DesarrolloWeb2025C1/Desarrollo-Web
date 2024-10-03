@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web - Tecnicatura Universitaria en Comecio Electrónico</title>
+    <link rel=StyleSheet href="index.css" type="text/css" media=screen> 
+    <link rel="icon" href="logo.png">        
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/igorezequiel22/Ecommerse-DesarrolloWeb/main/public/images/logo-small.png"
+            alt="Desarrollo Web" style="width: 300px;">
+        <nav>
+            <a class="css-button-rounded--grey" href="oficiales.html">Clases oficiales</a> 
+            <a class="css-button-rounded--grey" href="index.html">Clases Extras</a>
+            <a class="css-button-rounded--grey" href="utec.html">UTEC</a>
+            <a class="css-button-rounded--grey" href="recursos.html">Recursos y Ayuda</a>
+        </nav> 
+    </header>
+    <div class="contenidogral">
+        <button class="prev">&#10094;</button>
+        <div class="container">
+            <div class="container-carrossel">
+                <div class="carrossel">
+                    <div class="carrossel-item">
+                        <a href="https://nodejs.org/en/download/package-manager/current"><img src="imagenes/node.png" alt="Imagen 4 - node" style="width: 70%; height: auto;"></a>
+                    </div>
+                    <div class="carrossel-item">
+                        <a href="https://www.github.com/"><img src="imagenes/3.png" alt="Imagen 3 - github" style="width: 85%;"></a>
+                    </div>
+                    <div class="carrossel-item">
+                        <a href="https://git-scm.com/downloads"><img src="imagenes/gitt.png" alt="Imagen 3 - github" style="width: 85%;"></a>
+                    </div>
+                    <div class="carrossel-item">
+                        <a href=" "><img src="imagenes/html.png" alt="Imagen 4 - node" style="width: 70%; height: auto;"></a>
+                    </div>
+                    <div class="carrossel-item">
+                        <a href=" "><img src="imagenes/css.png" alt="Imagen 5 - npm" style="width: 100%;"></a>
+                    </div>
+                    <div class="carrossel-item">
+                        <a href="https://www.w3schools.com/js/default.asp"><img src="imagenes/javaScript-logo.png" alt="Imagen 6 - formspree" style="width: 60%; height: auto;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="next">&#10095;</button>
+    </div>
+    <br>
+    <br>
+    <div class="section">
+        <h2>HTML y CSS</h2>
+        <p>Introducción a HTML y CSS 👶🏻</p>
+        <div id="buttonHTML" class="button" onclick="toggleContent('htmlCss','buttonHTML')">Ver más</div>
+        <div id="htmlCss" class="hidden-content">
+            <p><b>HTML</b> (<i>HyperText Markup Language</i>) es un lenguaje de marcado que nos permite crear páginas web mediante etiquetas o elementos. Mediante HTML podemos incluir dentro de nuestras páginas web texto, imágenes, enlaces, tablas, vídeos, música, cualquier elemento que podamos imaginar. Todo elemento es representado por una etiqueta.</p>
+            <ul>
+                <li>Las etiquetas HTML suelen venir en pares, como <code>&lt;p&gt; ... &lt;/p&gt;</code>, donde la primera etiqueta marca el inicio del elemento y la segunda, precedida de una barra diagonal, marca el final.</li>
+                <li>HTML define la estructura de la página, organizando el contenido en encabezados, párrafos, listas, tablas, etc.</li>
+            </ul>
+            <br>
+            <p><b>CSS</b> (siglas de <i>Cascading Style Sheets</i>, 'hojas de estilo en cascada') es un lenguaje que gestiona el diseño y la presentación de las páginas web, complementando el HTML, que se encarga del contenido. Se llama "en cascada" porque permite usar múltiples hojas de estilo que heredan propiedades unas de otras.</p>
+            <ul>
+                <li>CSS permite personalizar la apariencia de un sitio, definiendo reglas para elementos de estilo como fuentes, colores y tamaños, separándolos del contenido y mejorando la experiencia visual de los usuarios.</li>
+                <li>Las reglas CSS están compuestas por selectores y declaraciones. Un selector especifica qué elementos HTML se verán afectados, y las declaraciones definen los estilos que se aplicarán.</li>
+            </ul>
+            <br>
+            <b>Ejemplo básico de HTML y CSS:</b>
+            <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Ejemplo de HTML y CSS&lt;/title&gt;
+        &lt;style&gt;
+            h1 {
+                color: blue;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                color: gray;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;¡Hola, mundo!&lt;/h1&gt;
+        &lt;p&gt;Este es un párrafo de ejemplo que utiliza estilos definidos en CSS.&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+            </pre>
+            En este ejemplo, el HTML define la estructura de la página con un encabezado y un párrafo, mientras que el CSS dentro de la etiqueta <b>&lt;style&gt;</b> define que el encabezado será de color azul y centrado, y el párrafo será de color gris y tendrá un tamaño de fuente de 16px.
+        </div>
+    </div>    
+        <div class="section">
+            <h2>JavaScript 🧩</h2>
+            <p>Conceptos básicos de JavaScript</p>
+            <div id="buttonJS" class="button" onclick="toggleContent('javascript','buttonJS')">Ver más</div>
+            <div id="javascript" class="hidden-content">
+                <h4>JavaScript es un lenguaje de programación que permite implementar funciones complejas en las páginas web.</h4>
+                <br>
+                <b>&lt;script&gt;</b> Se usa para incluir código JavaScript en una página HTML.
+                <br>
+                Puede ir en la sección <b>&lt;head&gt;</b> o al final del <b>&lt;body&gt;</b>. Es recomendable colocarlo al final del <b>&lt;body&gt;</b> para que el contenido HTML se cargue primero y mejorar el rendimiento de la página.
+                <br>
+                <b>&lt;script&gt;</b> No es una "etiqueta" de JavaScript en sí, sino una etiqueta de HTML que permite ejecutar código JavaScript.
+                <br><br>
+                Este lenguaje no usa etiquetas como en HTML, sino que trabaja con funciones, métodos y objetos para interactuar con el HTML y manipular el contenido de las páginas web.
+                <br><br>
+                <b>Características de JavaScript:</b>
+                <ul>
+                    <li>Es un lenguaje de programación de alto nivel, interpretado y orientado a objetos.</li>
+                    <li>Permite crear interactividad en las páginas web, como responder a eventos del usuario (clics, desplazamientos, pulsaciones de teclas), validar formularios, animar elementos, etc.</li>
+                    <li>Es ejecutado por los navegadores web, por lo que no necesita ser compilado.</li>
+                </ul>
+                <b>Interacción con HTML:</b>
+                <ul>
+                    <li>JavaScript puede manipular el DOM (Document Object Model) para modificar, eliminar o agregar elementos, estilos o contenido en la página web.</li>
+                    <li>A través de funciones y métodos, se puede hacer que las páginas sean interactivas y dinámicas.</li>
+                </ul>
+                <b>Ejemplo básico:</b>
+                <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Ejemplo de JavaScript&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1 id="titulo"&gt;¡Hola, mundo!&lt;/h1&gt;
+            &lt;button onclick="cambiarTexto()"&gt;Haz clic aquí&lt;/button&gt;
+        
+            &lt;script&gt;
+                function cambiarTexto() {
+                    document.getElementById("titulo").innerText = "¡Has hecho clic!";
+                }
+            &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+                </pre>
+                En este ejemplo, al hacer clic en el botón, la función <b>cambiarTexto()</b> cambia el texto del elemento con el id "titulo".
+            </div>
+        </div>        
+        <div class="section">
+            <h2>Etiquetas HTML 🤓☝️</h2>
+            <p>Algunas etiquetas para tener en cuenta</p>
+            <div class="button" onclick="toggleContent('ejercicios')">Ver etiquetas</div>
+            <div id="ejercicios" class="hidden-content">
+                <ul>
+                    <li>
+                        <b>En HTML, los elementos se definen usando etiquetas. Las etiquetas son las construcciones básicas de HTML y se usan para marcar el inicio y el final de un elemento.
+                            <br />Estas etiquetas vienen en pares: una etiqueta de apertura y una etiqueta de cierre.</b>
+                    </li>
+                    <li><b>&lt;html&gt; &lt;/html&gt;</b> Principio y final del documento HTML.</li>
+                    <li><b>&lt;head&gt; &lt;/head&gt;</b> Contiene metadatos sobre el documento, como el título y enlaces a hojas de estilo o scripts.</li>
+                    <li><b>&lt;body&gt; &lt;/body&gt;</b> El contenido visible de la página, donde se coloca todo lo que el usuario verá en la web.</li>
+                    <br>
+                    <b>Etiquetas semánticas dentro del <code>&lt;body&gt;</code>:</b>
+                    <ul>
+                        <li><b>&lt;header&gt; &lt;/header&gt;</b> Define la cabecera de una página o sección, que generalmente contiene el logotipo, el menú de navegación o el título principal.</li>
+                        <li><b>&lt;nav&gt; &lt;/nav&gt;</b> Define una sección de navegación que contiene enlaces a otras partes de la página o a diferentes páginas del sitio.</li>
+                        <li><b>&lt;section&gt; &lt;/section&gt;</b> Define una sección genérica de contenido que puede contener encabezados, párrafos, imágenes, etc. Es útil para agrupar contenido relacionado.</li>
+                        <li><b>&lt;article&gt; &lt;/article&gt;</b> Representa contenido independiente y auto-contenido, como un artículo de blog, una noticia o una entrada de foro.</li>
+                        <li><b>&lt;aside&gt; &lt;/aside&gt;</b> Contenido que está relacionado con el contenido principal pero que es independiente, como barras laterales, citas o anuncios.</li>
+                        <li><b>&lt;footer&gt; &lt;/footer&gt;</b> Define el pie de página de una página o sección, que suele contener información de contacto, derechos de autor o enlaces importantes.</li>
+                        <li><b>&lt;h1&gt; al &lt;h6&gt;</b> Definen los títulos y subtítulos de la página, siendo <code>&lt;h1&gt;</code> el más importante y <code>&lt;h6&gt;</code> el menos importante.</li>
+                        <li><b>&lt;p&gt; &lt;/p&gt;</b> Define un párrafo de texto.</li>
+                        <li><b>&lt;img src=""&gt;</b> Añade una imagen a la página. El atributo <code>src</code> especifica la ruta de la imagen.</li>
+                        <li><b>&lt;a href=""&gt; &lt;/a&gt;</b> Crea un hipervínculo. El atributo <code>href</code> define la URL a la que se enlaza.</li>
+                        <li><b>&lt;span&gt; &lt;/span&gt;</b> Utilizado para aplicar estilos o manipular un fragmento específico de texto dentro de una línea.</li>
+                        <li><b>&lt;div&gt; &lt;/div&gt;</b> Etiqueta genérica para agrupar elementos. No tiene un significado específico pero es útil para estructurar contenido y aplicar estilos.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Componentes de una regla CSS 🧐🔍</h2>
+            <p>Selector, valor, propiedad etc. </p>
+            <div class="button" onclick="toggleContent('css')">Ver ejercicios</div>
+            <div id="css" class="hidden-content">
+                <ul>
+                    <li>
+                        <h4>CSS no usa etiquetas como HTML, sino que usa selectores, propiedades y valores para aplicar estilos a los elementos HTML.</h4>
+                    </li>
+                    <li><b>color:</b> Define el color del texto.</li>
+                    <li><b>background-color:</b> Define el color de fondo de un elemento.</li>
+                    <li><b>padding:</b> Define el espacio interior entre el borde de un elemento y su contenido.</li>
+                    <li><b>margin:</b> Establece los márgenes de un elemento.</li>
+                    <li><b>display:</b> Controla el modelo de caja del elemento, como block, inline, flex, grid, etc.</li>
+                    <li><b>text-align:</b> Define la alineación del texto dentro de un elemento.</li>
+                    <li><b>width:</b> Define el ancho de un elemento.</li>
+                    <li><b>height:</b> Define el alto de un elemento.</li>
+                    <li><b>border:</b> Define el estilo, ancho y color del borde de un elemento (por ejemplo, <code>border: 1px solid black;</code>).</li>
+                    <li><b>font-size:</b> Define el tamaño de la fuente del texto.</li>
+                    <li><b>font-family:</b> Define la fuente del texto, como Arial, Verdana, "Times New Roman", etc.</li>
+                    <li><b>background-image:</b> Define una imagen de fondo para un elemento.</li>
+                    <li><b>opacity:</b> Define la transparencia de un elemento, donde 0 es completamente transparente y 1 es opaco.</li>
+                    <li><b>box-shadow:</b> Añade una sombra alrededor de un elemento (por ejemplo, <code>box-shadow: 5px 5px 10px gray;</code>).</li>
+                    <li><b>text-transform:</b> Controla la capitalización del texto, como uppercase (mayúsculas), lowercase (minúsculas), capitalize (primera letra en mayúscula).</li>
+                    <li><b>position:</b> Define cómo se posiciona un elemento en la página (por ejemplo, static, relative, absolute, fixed, sticky).</li>
+                    <li><b>overflow:</b> Controla qué ocurre si el contenido de un elemento es más grande que el área que lo contiene (valores: visible, hidden, scroll, auto).</li>
+                    <li><b>z-index:</b> Controla la superposición de elementos posicionados (un valor más alto lo coloca por encima de otros elementos con un valor más bajo).</li>
+                    <li><b>transition:</b> Permite crear animaciones suaves al cambiar de un estado a otro (por ejemplo, <code>transition: all 0.3s ease;</code>).</li>
+                    <li>
+                        <h4>En un CSS cada componente tiene su nombre:</h4>
+                        <img src="https://blog.hubspot.es/hubfs/queescssregla.jpeg" alt="Desarrollo Web" style="width: 250px;">
+                        <br><br>
+                        <b>.h1</b>: selector
+                        <br>
+                        <b>color: blue;</b>: declaración
+                        <br>
+                        <b>color</b>: propiedad
+                        <br>
+                        <b>blue o #0000FF</b>: valor
+                        <br>
+                        <b>{ }</b>: llaves
+                        <br><br>
+                        <h4>Dentro de un CSS lo que vamos a ver es una regla completa: Incluye tanto selector como declaraciones dentro de llaves, todo en un solo bloque.</h4>
+                        <h4><br>(ejemplo: <mark>.h1 { color: blue; }</mark>)</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Node.js 🟢</h2>
+            <p>Conceptos básicos de Node.js</p>
+            <div id="buttonNode" class="button" onclick="toggleContent('nodejs','buttonNode')">Ver más</div>
+            <div id="nodejs" class="hidden-content">
+                <h4>Node.js es un entorno de ejecución para JavaScript en el servidor. Permite usar JavaScript fuera del
+                    navegador para desarrollar aplicaciones del lado del servidor.</h4>
+                <br>
+                <b>Node.js</b> No es un lenguaje de programación en sí, sino una plataforma construida sobre el motor V8
+                de Google Chrome.
+                <br>
+                <b>npm</b> (Node Package Manager) es el gestor de paquetes para Node.js, utilizado para instalar y
+                gestionar dependencias en los proyectos.
+                <br>
+                <b>node</b> Es el comando utilizado para ejecutar archivos JavaScript en el entorno de Node.js desde la
+                línea de comandos.
+                <br>
+                <h4>Node.js y npm proporcionan varios comandos útiles para gestionar proyectos y ejecutar scripts.</h4>
+                <ul>
+                    <li><b>node <i>archivo.js</i></b> - Ejecuta un archivo JavaScript en el entorno de Node.js.</li>
+                    <li><b>npm init</b> - Inicializa un nuevo proyecto Node.js creando un archivo <i>package.json</i>.
+                    </li>
+                    <li><b>npm install</b> - Instala un paquete y sus dependencias desde el registro de npm.</li>
+                    <li><b>npm update</b> - Actualiza todos los paquetes instalados a sus últimas versiones.</li>
+                    <li><b>npm uninstall <i>paquete</i></b> - Desinstala un paquete del proyecto.</li>
+                    <li><b>npm run <i>script</i></b> - Ejecuta un script definido en el archivo <b>package.json</b>.
+                    </li>
+                    <li><b>npx <i>comando</i></b> - Ejecuta un comando de un paquete sin necesidad de instalarlo
+                        globalmente.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Git 📥</h2>
+            <p>Conceptos básicos y comandos comunes de Git</p>
+            <div id="buttonConcept" class="button" onclick="toggleContent('git','buttonConcept')">Ver más</div>
+            <div id="git" class="hidden-content">
+                <h4>Git es un sistema de control de versiones distribuido que permite gestionar y rastrear cambios en el
+                    código fuente durante el desarrollo de software.</h4>
+                <p>Git es ampliamente utilizado en la industria y facilita la colaboración en equipo, permitiendo a varios
+                    desarrolladores trabajar en un proyecto simultáneamente. Para más información, puedes visitar la
+                    <a href="https://git-scm.com/doc" target="_blank">documentación oficial de Git</a>.</p>
+                <p>A continuación, algunos comandos básicos de Git:</p>
+                <ul>
+                    <li><b>git init</b>: Inicializa un nuevo repositorio Git en el directorio actual.</li>
+                    <li><b>git clone [URL]</b>: Clona un repositorio remoto en tu máquina local.</li>
+                    <li><b>git add [archivo]</b>: Añade archivos al área de preparación (staging area) para el próximo commit.</li>
+                    <li><b>git commit -m "[mensaje]"</b>: Realiza un commit con los archivos en el área de preparación y
+                        añade un mensaje descriptivo.</li>
+                    <li><b>git status</b>: Muestra el estado actual del repositorio, incluyendo cambios no confirmados y
+                        archivos no rastreados.</li>
+                    <li><b>git pull</b>: Obtiene los últimos cambios del repositorio remoto y los fusiona con la rama local.</li>
+                    <li><b>git push</b>: Envía los commits locales al repositorio remoto.</li>
+                    <li><b>git branch</b>: Muestra una lista de ramas en el repositorio y resalta la rama actual.</li>
+                    <li><b>git checkout [rama]</b>: Cambia a una rama específica en el repositorio.</li>
+                    <li><b>git merge [rama]</b>: Fusiona los cambios de una rama en la rama actual.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>GitHub 🗃️</h2>
+            <p>Uso básico de GitHub y comandos comunes</p>
+            <div id="buttonGIT" class="button" onclick="toggleContent('github','buttonGIT')">Ver más</div>
+            <div id="github" class="hidden-content">
+                <h4>GitHub es una plataforma de alojamiento para proyectos de desarrollo de software que utiliza Git, un sistema de control de versiones distribuido. GitHub permite a los desarrolladores colaborar en proyectos de código, gestionar versiones de software, y compartir su trabajo con otros, tanto en proyectos públicos como privados.                </h4>
+                <p>A continuación, algunos comandos y conceptos básicos para trabajar con GitHub:</p>
+                <ul>
+                    <li>
+                        <div class="button" onclick="toggleContent('remote-add')">git remote add origin</div>
+                        <div id="remote-add" class="hidden-content">
+                            <p><b>Vincula tu repositorio local con un repositorio remoto en GitHub</b>
+                                <br>
+                                Este comando asocia tu repositorio local con una URL de repositorio remoto, permitiendo
+                                sincronización entre ambos.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button" onclick="toggleContent('push-main')">git push origin main</div>
+                        <div id="push-main" class="hidden-content">
+                            <p><b>Envía tu rama principal (main) al repositorio remoto en GitHub por primera vez</b>
+                                <br>
+                                Este comando sube tus cambios a la rama principal del repositorio remoto y configura
+                                `main` como rama predeterminada para futuros `push`.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button" onclick="toggleContent('pull-request')">Pull Request</div>
+                        <div id="pull-request" class="hidden-content">
+                            <p><b>Una solicitud de extracción permite proponer cambios en el repositorio de otra
+                                    persona</b>
+                                <br>
+                                Los PR son cruciales para colaborar, revisando cambios y discutiendo mejoras antes de
+                                fusionarlos al proyecto principal.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button" onclick="toggleContent('clone')">Git clone</div>
+                        <div id="clone" class="hidden-content">
+                            <p><b>Clona un repositorio de GitHub en tu máquina local para trabajar en él</b>
+                                <br>
+                                Clonar un repositorio descarga una copia completa de ese repositorio en tu máquina
+                                local, incluyendo todo su historial de cambios.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button" onclick="toggleContent('pull-main')">git pull origin main</div>
+                        <div id="pull-main" class="hidden-content">
+                            <p><b>Actualiza tu repositorio local con los cambios más recientes del repositorio remoto en
+                                    la rama principal</b>
+                                <br>
+                                Este comando sincroniza tu copia local del repositorio con los cambios más recientes
+                                realizados en la rama principal del repositorio remoto.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button" onclick="toggleContent('push')">Git push</div>
+                        <div id="push" class="hidden-content">
+                            <p><b>Envía tus commits locales al repositorio remoto en GitHub</b>
+                                <br>
+                                El comando `push` actualiza el repositorio remoto con los commits hechos en tu
+                                repositorio local,
+                                compartiendo así los cambios con otros colaboradores.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button" onclick="toggleContent('github-actions')">Acciones de github</div>
+                        <div id="github-actions" class="hidden-content">
+                            <p><b>Son flujos de trabajo automáticos que puedes configurar para CI/CD, pruebas,
+                                    despliegue, etc.</b>
+                                <br>
+                                Las GitHub Actions te permiten automatizar tareas comunes de desarrollo, como ejecutar
+                                pruebas automáticas cada vez que se hace un `push` a una rama.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+               <div class="section">
+            <h2>Comparación: Netlify vs GitHub Pages 🌐</h2>
+            <p>Dos populares plataformas para alojar sitios web estáticos</p>
+            <div id="buttonComparison" class="button" onclick="toggleContent('hostingComparison','buttonComparison')">Ver más</div>
+            <div id="hostingComparison" class="hidden-content">
+                <h4>Netlify y GitHub Pages son dos servicios ampliamente utilizados para alojar sitios web estáticos. A continuación, te presentamos una comparación de sus características principales:</h4>
+                <ul>
+                    <li>
+                        <b>Facilidad de Uso:</b><br>
+                        <b>Netlify:</b> Ofrece una interfaz intuitiva y una configuración fácil de usar, incluso para principiantes. Permite implementar directamente desde un repositorio de GitHub, GitLab o Bitbucket.
+                        <br>
+                        <b>GitHub Pages:</b> Requiere que el repositorio esté configurado correctamente, pero la implementación es automática si el proyecto está en GitHub. No tiene una interfaz tan visual como Netlify.
+                    </li>
+                    <br>
+                    <li>
+                        <b>Configuración del Dominio Personalizado:</b><br>
+                        <b>Netlify:</b> Ofrece una configuración muy sencilla para agregar un dominio personalizado y proporciona un certificado SSL gratuito.
+                        <br>
+                        <b>GitHub Pages:</b> También permite usar un dominio personalizado, pero requiere un poco más de configuración manual.
+                    </li>
+                    <br>
+                    <li>
+                        <b>Velocidad y Rendimiento:</b><br>
+                        Ambos servicios ofrecen un rendimiento excelente para sitios estáticos, con Netlify ofreciendo optimizaciones adicionales y CDN de forma nativa.
+                    </li>
+                    <br>
+                    <li>
+                        <b>Integraciones y Funcionalidades Adicionales:</b><br>
+                        <b>Netlify:</b> Tiene integraciones para formularios, autenticación, y funciones serverless, lo que permite agregar funcionalidades adicionales a sitios estáticos.
+                        <br>
+                        <b>GitHub Pages:</b> Está más limitado a la funcionalidad básica de alojar contenido estático.
+                    </li>
+                    <br>
+                    <li>
+                        <b>Enlaces para más información:</b><br>
+                        <a href="https://www.netlify.com/" target="_blank">Netlify</a> - Conoce más sobre Netlify y sus funcionalidades.<br>
+                        <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> - Descubre cómo alojar tu sitio web con GitHub Pages.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/igorezequiel22/Sitio-Web-HTML-CSS/main/sitioweb-ezequiel/imges/unpaz_logo.png"
+                alt="Desarrollo Web" style="width: 300px;">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
