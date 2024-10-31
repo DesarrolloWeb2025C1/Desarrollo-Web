@@ -270,18 +270,32 @@ document.getElementById("titulo")
                     <a href="https://git-scm.com/doc" target="_blank">documentación oficial de Git</a>.</p>
                 <p>A continuación, algunos comandos básicos de Git:</p>
                 <ul>
-                    <li><b>git init</b>: Inicializa un nuevo repositorio Git en el directorio actual.</li>
+                    <li><b>cd /c</b>: Este comando es útil cuando necesitas navegar a la raíz de la unidad C.</li>
+                    <li><b>cd [nombre de carpeta]</b>: Este comando permite navegar y moverte hacia la carpeta que especifiques.</li>
+                    <li><b>mkdir [nombre de carpeta]</b>: Crea una nueva carpeta con el nombre especificado. </li>
+                    <li><b>ls </b>: Muestra una lista de los archivos y carpetas en el directorio actual.</li>
+                    <li><b>ls -a </b>: Muestra todos los archivos y carpetas en el directorio actual, incluyendo archivos ocultos (.git). </li>
+                    <li><b>git init</b>:  Inicializa un nuevo repositorio de Git en un proyecto. Esto convierte la carpeta actual en un repositorio de Git. Este comando crea una  subcarpeta oculta llamada .git, donde Git almacena toda la información necesaria para gestionar el repositorio, como el historial de cambios y las configuraciones.</li>
+                    <li><b>git remote add origin [URL]</b>:  Sirve para asociar el repositorio local con el repositorio remoto. Es decir, se usa para linkear el repositorio local con el remoto. </li>
                     <li><b>git clone [URL]</b>: Clona un repositorio remoto en tu máquina local.</li>
                     <li><b>git add [archivo]</b>: Añade archivos al área de preparación (staging area) para el próximo commit.</li>
-                    <li><b>git commit -m "[mensaje]"</b>: Realiza un commit con los archivos en el área de preparación y
-                        añade un mensaje descriptivo.</li>
-                    <li><b>git status</b>: Muestra el estado actual del repositorio, incluyendo cambios no confirmados y
-                        archivos no rastreados.</li>
+                    <li><b>git add . </b>: Añade todos los archivos y cambios al área de preparación (staging area), listo para ser comiteado. </li>
+                    <li><b>git commit -m "mensaje"</b>: Realiza un commit con los archivos en el área de preparación y añade un mensaje descriptivo.</li>
+                    <li><b>git push origin [rama]</b> Envía los cambios locales a la rama especificada en el repositorio remoto.</li>
+                    <li><b>git status</b>: Muestra el estado actual del repositorio, incluyendo cambios no confirmados y archivos no rastreados.</li>
                     <li><b>git pull</b>: Obtiene los últimos cambios del repositorio remoto y los fusiona con la rama local.</li>
                     <li><b>git push</b>: Envía los commits locales al repositorio remoto.</li>
                     <li><b>git branch</b>: Muestra una lista de ramas en el repositorio y resalta la rama actual.</li>
+                    <li><b>git branch [rama]</b>: Este comando solo crea la rama, pero no te cambia a ella. </li>
                     <li><b>git checkout [rama]</b>: Cambia a una rama específica en el repositorio.</li>
-                    <li><b>git merge [rama]</b>: Fusiona los cambios de una rama en la rama actual.</li>
+                    <li><b>git checkout -b [rama]</b>: Se usa para crear una nueva rama y cambiarse automáticamente a esa rama recién creada en un solo paso.</li>
+                    <li><b>git branch -d [rama]</b>: Borra una rama local con el nombre especificado, siempre que no tenga cambios pendientes.</li>
+                    <li><b>git config --global user.name [Mi nombre]</b>: Configura el nombre de usuario en Git. Este nombre aparecerá en los commits que realices.</li>
+                    <li><b>git config --global user.email [mi_mail@mail.com]</b>: Configura el correo electrónico asociado con el usuario en Git. También aparece en los commits.</li>
+                    <li><b>git log</b>: Muestra el historial de commits en el repositorio, con detalles de cada commit, como el autor, fecha y mensaje de commit.</li>
+                    <li><b>git merge [rama]</b>: Se utiliza para combinar los cambios de una rama especificada con la rama en la que estás actualmente.</li>
+
+            
                 </ul>
             </div>
         </div>
