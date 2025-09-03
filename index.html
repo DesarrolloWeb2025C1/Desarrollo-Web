@@ -13,8 +13,7 @@
             alt="Desarrollo Web" style="width: 300px;">
         <nav>
             <a class="css-button-rounded--grey" href="oficiales.html">Clases oficiales</a> 
-            <a class="css-button-rounded--grey" href="index.html">Clases Extras</a>
-            <a class="css-button-rounded--grey" href="utec.html">UTEC</a>
+            <a class="css-button-rounded--grey" href="index.html">Tecnologías y lenguajes web</a>
             <a class="css-button-rounded--grey" href="recursos.html">Recursos y Ayuda</a>
         </nav> 
     </header>
@@ -305,7 +304,8 @@ document.getElementById("titulo")
             <p>Uso básico de GitHub y comandos comunes</p>
             <div id="buttonGIT" class="button" onclick="toggleContent('github','buttonGIT')">Ver más</div>
             <div id="github" class="hidden-content">
-                <h4>GitHub es una plataforma de alojamiento para proyectos de desarrollo de software que utiliza Git, un sistema de control de versiones distribuido. GitHub permite a los desarrolladores colaborar en proyectos de código, gestionar versiones de software, y compartir su trabajo con otros, tanto en proyectos públicos como privados.                </h4>
+                <h4>GitHub es una plataforma de alojamiento para proyectos de desarrollo de software que utiliza
+                     Git, un sistema de control de versiones distribuido. GitHub permite a los desarrolladores colaborar en proyectos de código, gestionar versiones de software, y compartir su trabajo con otros, tanto en proyectos públicos como privados.                </h4>
                 <p>A continuación, algunos comandos y conceptos básicos para trabajar con GitHub:</p>
                 <ul>
                     <li>
@@ -385,8 +385,7 @@ document.getElementById("titulo")
                 </ul>
             </div>
         </div>
-
-               <div class="section">
+           <div class="section">
             <h2>Comparación: Netlify vs GitHub Pages 🌐</h2>
             <p>Dos populares plataformas para alojar sitios web estáticos</p>
             <div id="buttonComparison" class="button" onclick="toggleContent('hostingComparison','buttonComparison')">Ver más</div>
@@ -433,6 +432,19 @@ document.getElementById("titulo")
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+function toggleContent(contentId, buttonId = null) {
+  const content = document.getElementById(contentId);
+  
+  // Si el contenido está visible, lo oculta
+  if (content.style.display === "block") {
+    content.style.display = "none";
+  } else {
+    // Deja que los otros se queden abiertos y solo alterna este
+    content.style.display = "block";
+  }
+}
+</script>
 </body>
 
 </html>

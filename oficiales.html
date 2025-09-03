@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo Web - Tecnicatura Universitaria en Comecio Electrónico</title>
-    <link rel=StyleSheet href="index.css" type="text/css" media=screen> 
-    <link rel="icon" href="logo.png">        
+    <link rel="stylesheet" href="index.css" type="text/css" media="screen"> 
+    <link rel="icon" href="imagenes/LOGO.ico" type="image/icon">        
 </head>
 <body>
     <header>
@@ -13,204 +13,477 @@
             alt="Desarrollo Web" style="width: 300px;">
         <nav>
             <a class="css-button-rounded--grey" href="oficiales.html">Clases oficiales</a> 
-            <a class="css-button-rounded--grey" href="index.html">Clases Extras</a>
-            <a class="css-button-rounded--grey" href="utec.html">UTEC</a>
+            <a class="css-button-rounded--grey" href="index.html">Tecnologías y lenguajes web</a>
             <a class="css-button-rounded--grey" href="recursos.html">Recursos y Ayuda</a>
         </nav> 
     </header>
-        <div id="slider" class="carousel">
+           <div class="contenidogral">
+        <div id="slider-oficiales" class="carousel-oficiales">
             <div class="slides">
-                <div class="slide" style="background-image: url('imagenes/brief.jpeg'); background-size: contain; background-repeat: no-repeat;"></div>
-                <div class="slide" style="background-image: url('imagenes/scrum.jpeg'); background-size: contain; background-repeat: no-repeat;"></div>
-                <div class="slide" style="background-image: url('imagenes/api.jpeg'); background-size: contain; background-repeat: no-repeat;"></div>
+                <div class="slide-oficiales" style="background-image: url('imagenes/dw.png');"></div>
+                <div class="slide-oficiales" style="background-image: url('imagenes/brief.png');"></div>
+                <div class="slide-oficiales" style="background-image: url('imagenes/jira.png');"></div>
+                <div class="slide-oficiales" style="background-image: url('imagenes/softskills.jpeg');"></div>
+                <div class="slide-oficiales" style="background-image: url('imagenes/FvB.jpg');"></div>
+                <div class="slide-oficiales" style="background-image: url('imagenes/api.png');"></div>
+                <div class="slide-oficiales" style="background-image: url('imagenes/scrum.png');"></div>
             </div>
-        
-            <!-- Botones de control -->
-            <button  class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
-                &#10094;
-            </button>
-            <button  class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
-                &#10095;
-            </button>
         </div>
+    </div>
     <br>
     <br>
-    <div class="section">
-        <h2>Brief</h2>
-        <p>Un brief es un documento guía que proporciona información esencial sobre un proyecto. </p>
-        <div id="buttonBrief" class="button" onclick="toggleContent('briefContent','buttonBrief')">Ver más</div>
-        <div id="briefContent" class="hidden-content">
-            <p>Su objetivo es alinear expectativas y asegurar que todas las partes involucradas tengan una comprensión clara de los objetivos y requerimientos. A continuación, se detallan las partes que debe contener un brief:</p>
-            <ul>
-                <li><b>Descripción del proyecto:</b> Resumen general que explica el proyecto, sus metas y su importancia.</li>
-                <li><b>Datos de contacto:</b> Información de las personas clave a contactar, como cliente y responsables del proyecto.</li>
-                <li><b>Público objetivo:</b> Definición del grupo de personas al que se dirige el proyecto o producto.</li>
-                <li><b>Productos o servicios ofrecidos:</b> Detalle de los productos o servicios involucrados en el proyecto.</li>
-                <li><b>Competencia:</b> Información sobre competidores directos o indirectos en el mercado.</li>
-                <li><b>Referencias:</b> Ejemplos o ideas de proyectos similares que el cliente encuentra inspiradores.</li>
-                <li><b>Presupuesto:</b> Cifra destinada al proyecto, incluyendo desglose de costos si es necesario.</li>
-                <li><b>Objetivos:</b> Metas que se esperan lograr con el proyecto.</li>
-                <li><b>Objetivo principal:</b> Meta central del proyecto.</li>
-                <li><b>Objetivos secundarios:</b> Otras metas complementarias.</li>
-                <li><b>Mapa de sitio:</b> Estructura y organización del contenido que estará disponible, especialmente en proyectos web.</li>
-                <li><b>Idiomas:</b> Lenguas en las que se debe desarrollar el proyecto (si aplica).</li>
-                <li><b>Tiempos:</b> Cronograma con fechas clave y plazos de entrega.</li>
-                <li><b>Imagen corporativa y diseños:</b> Lineamientos de la identidad visual y ejemplos de diseños relacionados con la marca.</li>
-                <li><b>Funcionalidades:</b> Especificaciones técnicas sobre las características o herramientas que el proyecto debe incluir.</li>
-                <li><b>Tecnología:</b> Plataformas, lenguajes de programación y otras tecnologías que se usarán.</li>
-                <li><b>Alojamiento web:</b> Información sobre el hosting donde estará el proyecto (para proyectos web).</li>
-                <li><b>Dominios:</b> Detalles sobre el dominio web o subdominios asociados al proyecto.</li>
-                <li><b>Mantenimiento:</b> Plan para asegurar el mantenimiento y las actualizaciones futuras del proyecto.</li>
-            </ul>
-            <b>En  conclusión: </b>
-            <p>Un buen brief es el que sirve durante todo el tiempo de proyecto, a todos sus actores, como documento guía o piedra fundamental, para entender lo que el proyecto requiere, especialmente sus objetivos y
-                marco contextual.</p>
+    </body>
+           <div class="section">
+            <h2>Clase 1 🚀</h2>
+            <p>Brief, Minutas y Requerimientos en proyectos web</p>
+           <div class="button" id="buttonContacto" onclick="toggleContent('contacto', 'buttonContacto')">Ver más</div>
+<div id="contacto" class="hidden-content" style="display:none;">
+                <h2>Recursos</h2>
+                <br>
+                   <h3 style="margin-top:20px; margin-bottom:10px;"><strong>Documentar para trabajar mejor</strong></h3>
+       <p style="margin-bottom:15px; line-height:1.6;">Comprender la importancia de documentar en un proyecto web, no solo desde lo técnico, sino también en la planificación, comunicación y colaboración.</p>
+<p style="margin-bottom:15px; line-height:1.6;">Practicaremos cómo crear documentos como el <strong>Brief</strong>, la <strong>Minuta de reunión</strong> y los <strong>Requerimientos funcionales</strong>, utilizando herramientas colaborativas como GitHub Wiki o Google Docs.</p>
+
+<hr style="margin:25px 0;">
+
+<h4 style="margin-top:20px; margin-bottom:10px;"><strong>¿Por qué documentar?</strong></h4>
+<p style="margin-bottom:15px; line-height:1.6;">La documentación es una herramienta clave en cualquier proyecto web. No solo sirve para “tener un respaldo”, sino que:</p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li>Permite registrar decisiones, cambios, acuerdos y tareas.</li>
+    <li>Facilita el trabajo en equipo y la incorporación de nuevos miembros.</li>
+    <li>Evita malentendidos con clientes, tutores o compañeros.</li>
+    <li>Ordena el desarrollo del proyecto y mejora la planificación.</li>
+</ul>
+
+<p style="margin-bottom:20px; line-height:1.6;">En el contexto de desarrollo web... 
+    la documentación actúa como una fuente única de la verdad (<em>Single Source of Truth</em>).</p>
+
+<hr style="margin:25px 0;">
+
+<h4 style="margin-top:20px; margin-bottom:10px;">Tipos de documentación en un proyecto web</h4>
+
+<p style="margin-top:15px; margin-bottom:10px;">1. Documentación estratégica y de comunicación</p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li><strong>Minuta:</strong> Registro breve de una reunión que resume lo conversado, los acuerdos y las tareas asignadas.</li>
+</ul>
+
+<p style="margin-bottom:15px; line-height:1.6;"><strong>Objetivos de una minuta:</strong></p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li>Tomar notas de una reunión.</li>
+    <li>Dejar asentada la información revisada.</li>
+    <li>Registrar los acuerdos alcanzados.</li>
+    <li>Definir acciones a tomar.</li>
+    <li>Indicar los participantes.</li>
+    <li>Dar seguimiento a acciones previas.</li>
+</ul>
+
+<p style="margin-bottom:15px; line-height:1.6;"> <strong>Cómo estructurar una minuta:</strong></p>
+<ol style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li>Asignar un responsable antes de la reunión.</li>
+    <li>Preparar una plantilla con los temas a tratar.</li>
+    <li>Escuchar y tomar nota.</li>
+    <li>Revisar las notas.</li>
+    <li>Elaborar conclusiones y enviarlas.</li>
+</ol>
+
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li><strong>Brief:</strong> Documento inicial que sintetiza el objetivo del proyecto, su público y el problema a resolver.</li>
+</ul>
+
+<p style="margin-bottom:15px; line-height:1.6;"><strong>Elementos de un Brief:</strong></p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li>Descripción del proyecto.</li>
+    <li>Datos de contacto.</li>
+    <li>Público objetivo.</li>
+    <li>Productos o servicios.</li>
+    <li>Competencia.</li>
+    <li>Referencias de diseño.</li>
+    <li>Objetivos primarios y secundarios.</li>
+    <li>Presupuesto estimado.</li>
+</ul>
+
+<p style="margin-top:15px; margin-bottom:10px;"><strong>2. Documentación de requerimientos</strong></p>
+<p style="margin-bottom:15px; line-height:1.6;">Especifica lo que el sitio debe hacer y cómo debe comportarse.</p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li><strong>Funcionales:</strong> describen funciones y comportamientos esperados.</li>
+    <li><strong>No funcionales:</strong> definen características de calidad y restricciones.</li>
+</ul>
+
+<p style="margin-bottom:15px; line-height:1.6;"><strong>Ejemplos funcionales:</strong></p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li>Mapa del sitio.</li>
+    <li>Registro y autenticación de usuarios.</li>
+    <li>Carrito de compras y checkout.</li>
+    <li>Integración con pasarelas de pago.</li>
+</ul>
+
+<p style="margin-bottom:15px; line-height:1.6;"><strong>Ejemplos no funcionales:</strong></p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li>Tiempo de carga menor a 2 segundos.</li>
+    <li>Compatibilidad con navegadores principales.</li>
+    <li>Cumplimiento de estándares WCAG 2.1 AA.</li>
+</ul>
+
+<p style="margin-top:15px; margin-bottom:10px;"><strong>3. Documentación técnica</strong></p>
+<p style="margin-bottom:15px; line-height:1.6;">Describe cómo se construirá la web y qué se necesita para hacerlo.</p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li>Mapa del sitio detallado con rutas y plantillas.</li>
+    <li>Especificaciones técnicas (HTML, CSS, JS, CMS, frameworks).</li>
+    <li>Compatibilidad y navegadores soportados.</li>
+    <li>Guía de estilo visual.</li>
+    <li>Normas de desarrollo y despliegue.</li>
+</ul>
+
+<hr style="margin:25px 0;">
+
+<p style="margin-top:20px; margin-bottom:10px;"><strong>Herramientas recomendadas</strong></p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li><strong>GitHub Wiki:</strong> documentación con control de versiones.</li>
+    <li><strong>Google Docs:</strong> edición colaborativa.</li>
+    <li><strong>HackMD:</strong> edición de Markdown en equipo.</li>
+    <li><strong>Notion:</strong> paneles visuales y organización.</li>
+</ul>
+
+<hr style="margin:25px 0;">
+
+<p style="margin-top:20px; margin-bottom:10px;"><strong>Lecturas y recursos complementarios</strong></p>
+<ul style="margin-bottom:20px; padding-left:25px; line-height:1.6;">
+    <li><a href="https://medium.com/@xpandmarketing/how-to-write-a-brief-for-your-web-designer-24c41f00e203" target="_blank">How to write a great design brief</a></li>
+    <li><a href="https://www.atlassian.com/es/agile/product-management/requirements" target="_blank">¿Qué son los requerimientos en un proyecto?</a></li>
+    <li><a href="https://docs.github.com/es/communities/documenting-your-project-with-wikis/about-wikis" target="_blank">Guía oficial GitHub Wiki</a></li>
+    <li><a href="https://notion.so/" target="_blank">Notion</a></li>
+    <li><a href="https://hackmd.io/" target="_blank">HackMD</a></li>
+</ul>
+
+            </div>
         </div>
-    </div>  
-    <div class="section">
-        <h2>Arquitectura Web 🧩</h2>
-        <p>Arquitectura de una aplicación web: Modelo de capas</p>
-        <div id="buttonArquitectura" class="button" onclick="toggleContent('arquitecturaWeb','buttonArquitectura')">Ver más</div>
-        <div id="arquitecturaWeb" class="hidden-content">
-            <h4>La arquitectura de una aplicación web es clave para ofrecer una experiencia eficiente y satisfactoria al usuario.</h4>
-            <img src="imagenes\capas.png" alt="imagen de capas" style="width: 250px; ">
-            <p>El modelo de capas divide la aplicación en componentes con responsabilidades específicas, como:</p>
-            <ul>
-                <li><b>Capa de presentación:</b> Responsable de la interfaz de usuario.</li>
-                <li><b>Capa de negocio:</b> Aplica las reglas de negocio y gestiona la lógica de la aplicación.</li>
-                <li><b>Capa de datos:</b> Se encarga del acceso y gestión de bases de datos.</li>
-                <li><b>Capa de entidades:</b> (Opcional) Define los objetos que representan los datos de la aplicación.</li>
-            </ul>
-            <p>El flujo de comunicación en este modelo es estricto, cada capa solo puede interactuar con la capa inmediatamente inferior o superior. Esto asegura la separación de responsabilidades y facilita el mantenimiento.</p>
-            
-            <h4>Ventajas de la arquitectura en capas:</h4>
-            <ul>
-                <li><b>Separación de responsabilidades:</b> Cada capa se encarga de una tarea específica, lo que mejora la organización.</li>
-                <li><b>Facilidad de desarrollo:</b> Es un modelo conocido y ampliamente usado en el desarrollo de aplicaciones.</li>
-                <li><b>Facilidad de pruebas:</b> Se pueden probar individualmente cada una de las capas, facilitando la detección de errores.</li>
-                <li><b>Facilidad de mantenimiento:</b> Al tener tareas específicas, es sencillo identificar y corregir problemas.</li>
-                <li><b>Seguridad:</b> El aislamiento de capas mejora la seguridad al permitir la implementación de medidas de protección entre ellas.</li>
-            </ul>
-    
-            <h4>Desventajas de la arquitectura en capas:</h4>
-            <ul>
-                <li><b>Performance:</b> El paso de información entre capas puede ralentizar el sistema, ya que requiere múltiples comunicaciones.</li>
-                <li><b>Complejidad de despliegue:</b> El despliegue de la aplicación requiere un orden secuencial entre las capas.</li>
-                <li><b>Tolerancia a fallos:</b> Si una capa falla, las capas superiores también se ven afectadas.</li>
-            </ul>
-            
-            <h4>Front-End Vs Back-End</h4>
-            <p>La división entre front-end y back-end se refiere a las capas en las que trabajan los desarrolladores:</p>
-            <ul>
-                <li><b>Front-End:</b> Se ocupa de la capa de presentación. Utiliza lenguajes como HTML, CSS y JavaScript para gestionar la interfaz de usuario y responder a las interacciones del usuario.</li>
-                <li><b>Back-End:</b> Se especializa en la capa de negocio y acceso a datos. Gestiona la lógica de la aplicación, el almacenamiento de datos y las respuestas a las solicitudes del cliente. Utiliza lenguajes como Node.js, Python, Ruby, Java, entre otros.</li>
-            </ul>
-            
-            <p>Este modelo asegura que la aplicación pueda ser escalable, fácil de mantener y que cumpla con las necesidades tanto del negocio como del usuario final.</p>
+        <div class="section">
+        <h2>Clase 2 🚀</h2>
+        <p>Arquitectura web - modelo de capas - Frontend vs Backend</p>
+       <div id="buttonVS2" class="button" onclick="toggleContent('vscode2','buttonVS2')">Ver más</div>
+         <div id="vscode2" class="hidden-content">
+
+
+  <p><span style="font-size: 1.64062rem; font-weight: 700;">Arquitectura de una aplicación web - Diseñando un sitio</span></p>
+
+  <p>
+    La arquitectura de una aplicación web es un tema importante cuando se trata de la participación del usuario. 
+    La arquitectura de aplicaciones web permite a los desarrolladores diseñar aplicaciones web que satisfagan las necesidades básicas y 
+    avanzadas de los visitantes. Los criterios pueden variar desde una carga rápida hasta una navegación simple.
+  </p>
+
+  <p>
+    Un objetivo importante para cualquier negocio es evitar pagar mucho dinero para desarrollar una aplicación. 
+    Para hacerlo, primero debe comprender qué constituye una buena arquitectura.
+  </p>
+
+  <p>
+    Para ello debería plantearme varias preguntas al momento de planificar el desarrollo:
+  </p>
+
+  <ul>
+    <li>¿El sitio se ejecuta solo en el browser?</li>
+    <li>¿Va a hacer uso de recursos subidos en un servidor?</li>
+    <li>¿Es su arquitectura apta para el futuro?</li>
+    <li>¿Es escalable y sostenible?</li>
+    <li>¿Y cómo decidir qué componentes y funcionalidades incluir en una aplicación?</li>
+  </ul>
+
+  <h2>¿La aplicación se ejecuta en el browser?</h2>
+  <p>
+    No siempre, muchas se ejecutan en un servidor web, es decir usan recursos subidos a un servidor de aplicaciones y las aplicaciones acceden a través de una conexión web. 
+    La aplicación se crea con lenguajes de programación como Javascript, CSS y HTML mientras que los recursos subidos en un servidor de aplicaciones se crean con lenguajes de programación como Java, Visual C#, PHP, Python, etc. 
+  </p>
+
+  <p>
+    Las tendencias, las modas o las tecnologías del mercado cambian con el tiempo, las expectativas de los clientes también y el crecimiento de una empresa nunca termina.
+  </p>
+
+  <p>
+    Es importante definir una arquitectura que permita que la aplicación sea escalable, sólida y sostenible.
+  </p>
+
+  <h2>Arquitectura de una aplicación “Modelo de capas”</h2>
+  <p>
+    La arquitectura o modelo de capas se trata de un modelo de interacciones simultáneas entre componentes, bases de datos, sistemas de middleware (que conectan diferentes servicios), interfaces de usuario y servidores en una aplicación.
+  </p>
+  <p>
+    La arquitectura en capas consta en dividir la aplicación en capas, con la intención de que cada capa tenga un rol muy definido, como podría ser, una capa de presentación (capa de interfaz de usuario), una capa de reglas de negocio (capa de negocio) y una capa de acceso a datos (capa de datos). 
+    Este estilo arquitectónico no define cuántas capas debe de tener la aplicación, sino más bien se centra en la separación de la aplicación en capas. 
+    Algunos incluyen una cuarta capa, denominada capa de entidades donde se encuentran las representaciones de datos que atraviesan todas las capas (ejemplo: un alumno, un empleado, aulas, ventas).
+  </p>
+
+  <p>
+    En una arquitectura en capas, todas las capas se colocan de forma horizontal, de tal forma que cada capa solo puede comunicarse con la capa que está inmediatamente por debajo. 
+    Por ejemplo, si la capa de presentación requiere consultar la base de datos, tendrá que solicitar la información a la capa de negocio, la cual la solicitará a la capa de persistencia, y esta a su vez a la base de datos. Finalmente, la respuesta retornará en sentido inverso hasta llegar a la capa de presentación.
+  </p>
+
+  <h2>Descripción de cada capa</h2>
+
+  <h4>Capa de interfaz de usuario</h4>
+  <p>
+    La interfaz de usuario es el cómo mostrar los datos de la aplicación en la pantalla y tiene como principal función ser el punto principal de interacción con el usuario.
+    Cuando los datos cambian (ya sea por interacción del usuario o por entrada externa), deben actualizarse para reflejar los cambios.
+  </p>
+  <p>
+    Aunque los datos reales se encuentren almacenados en una base de datos, la interfaz es una representación visual del estado de esos datos. 
+    Un tema a considerar es que a esta capa no pueden llegar datos sensibles que no sean necesarios para la funcionalidad mostrada.
+  </p>
+
+  <h3>Capa de negocio</h3>
+  <p>
+    Es la responsable de encapsular la lógica de dominio compleja o la lógica de negocio, la toma de decisiones, los algoritmos, el entrecruzamiento de datos. 
+    Esta capa transforma a los datos en la información que consumirá la capa de interacción con el usuario.
+  </p>
+  <p>
+    Puede ser reutilizada por varios dispositivos en simultáneo: móviles, tablets o computadoras. 
+    Aquí se establecen todas las reglas que deben cumplirse.
+  </p>
+
+  <h3>Capa de base de datos</h3>
+  <p>
+    La capa de datos está formada por repositorios que administran las fuentes de datos. 
+    Cada repositorio sabe conectarse a una base de datos, con el objetivo de leer, ingresar, modificar y eliminar datos.
+  </p>
+
+  <h3>Ventajas y desventajas de la arquitectura de capas</h3>
+
+  <h4>Ventajas</h4>
+  <ul>
+    <li>Separación de responsabilidades: cada capa tiene una sola responsabilidad.</li>
+    <li>Fácil de desarrollar: muy conocida y usada.</li>
+    <li>Fácil de probar: se pueden probar capas de forma individual.</li>
+    <li>Fácil de mantener: permite detectar errores de forma más clara.</li>
+    <li>Seguridad: aislamiento de capas dificulta ataques.</li>
+  </ul>
+
+  <h3>Desventajas</h3>
+  <ul>
+    <li><strong>Performance:</strong> la comunicación entre capas puede degradar el rendimiento.</li>
+    <li><strong>Complejidad de despliegue:</strong> los componentes dependen de ser desplegados en orden.</li>
+    <li><strong>Tolerancia a fallos:</strong> si una capa falla, las superiores también fallan en cascada.</li>
+  </ul>
+
+  <h2>Front-End vs Back-End</h2>
+  <p>
+    En el desarrollo se habla mucho de desarrolladores front-end y back-end, según la capa en la que se especialicen.
+  </p>
+  <p>
+    <strong>Front-End:</strong> se enfoca en la interfaz de usuario. Responde a la entrada del usuario y genera la representación visual (HTML, CSS, JavaScript en apps web).
+  </p>
+  <p>
+    <strong>Back-End:</strong> se enfoca en la capa de negocio y de datos. Sus funciones son:  
+   <ul>
+    <li> 1- responder a solicitudes HTTP y devolver respuestas, </li> 
+    <li> 2- obtener, modificar, almacenar o eliminar datos. </li> 
+    Se puede programar en C#, Java, Python, Ruby, Node.js, PHP, entre otros.
+  </p></ul>
+</div>
+</div>
+        <div class="section">
+            <h2>Taller repositorios🔌</h2>
+            <p>Repositorios - control de versiones - Git</p>
+            <div id="buttonExtensions" class="button" onclick="toggleContent('vscodeExtensions','buttonExtensions')">Ver más</div>
+            <div id="vscodeExtensions" class="hidden-content">
+                <h4>Visual Studio Code es un editor de código muy popular y versátil que se puede personalizar con extensiones para adaptarse a las necesidades de cada desarrollador. A continuación, algunas de las extensiones más importantes:</h4>
+                <p dir="ltr" style="text-align: left;"></p>
+              <h3>
+             <ul>
+              <li><span style="">Contexto teórico</span></li>
+           </ul>
+          </h3>  
+             <h3>¿Qué es un repositorio?</h3>
+             <p dir="ltr">Un repositorio es un almacenamiento virtual de tu proyecto. Te permite guardar versiones del código a las que puedes acceder cuando lo necesites.</p>
+             <p dir="ltr"><img src="https://lh3.googleusercontent.com/8XGVnGl39AryzaYVY-_MUFEdsvt9WxXMyftCbqMEoNWyFniZydlayXPGTj1X0jZ1Iy-gcTtNpNjc_uzRn03uN4qUcp4NPjkFKe5DKbXIEtxSXbtjJol2uveWInsFHbxtN-eYTTNkJkwI1AVNo4Tsf0w" width="499" height="267"></p>
+             <p dir="ltr">Este sistema nos permite, mantener nuestro código guardado en un repositorio local o en un repositorio remoto, un repositorio local se encuentra en nuestra computadora y un repositorio remoto en la nube.</p>
+             <p dir="ltr"><img src="https://1.bp.blogspot.com/-2LdVuKzwtpM/WqA9oiisLcI/AAAAAAAAKBw/71lcR3yjPqYG0Ohydkc2xm_p_HSHxXrpgCLcBGAs/s640/Repositorios.PNG" alt="Estudiar, analizar, aprender.. : Git y Github. Conceptos básicos."><br></p>
+             <p dir="ltr"><br></p>
+             <p dir="ltr">El repositorio remoto es centralizado, es decir todos podemos acceder a él mientras tengamos los permisos necesarios. El repositorio local aunque es una copia, de esta solo guardado en la computadora del usuario.</p>
+             <p dir="ltr"><span>Cuando tenemos un repositorio remoto, podemos obtenerlo con un comando llamado clonar.</span><br></p>
+             <h5></h5>
+             <p dir="ltr"><img src="https://lh3.googleusercontent.com/wQThncrMdkyHNG8IofNq-HFVa_K5tISXQGcLfPr2PmMZalWs3WXhY5MThOvUrjRT-QV5t2Cdr1vZxA_QIkgNEtfP2VEF9wMhPISnsM-oesLR27A8_2o_RtQ9WoE66KVYJ3BJ1jwzwaY7OL_yO8Cygnk" width="602" height="253"></p><br>
+             <h5></h5><br>
+             <h3>Control de versiones&nbsp;</h3>
+             <p></p><em>Una vez un alumno de Comercio Electrónico de una universidad en José C. Paz desarrolló un sitio web en HTML, CSS y JS durante varias horas. Se trataba de un proyecto final “un e-commerce”, como parte del trabajo práctico de un curso de desarrollo. Resulta que una noche antes de la entrega del proyecto, él tenía funcionando el sitio con un buen avance de los requisitos requeridos; sin embargo, decidió hacer unos arreglos finales a últimas horas de la noche. El profesor les había advertido que los cambios de último momento generan fallas inesperadas.</em><br><strong>
+             <p dir="ltr"><em>Pero el alumno hizo caso omiso a la recomendación, pensando que a un buen desarrollador&nbsp; no le pasaban esas cosas!... La historia concluye en que a la hora de entregar el proyecto, el programa falló y el alumno se lamentó diciendo: si no hubiera hecho esos últimos cambios, mi programa no hubiera fallado!!.</em></p><br>
+             </strong>
+           <div><strong>
+        <h4>El alumno debió tener un sistema de control de versiones listo para hacer este trabajo práctico.</h4>
+    </strong></div>
+             <p dir="ltr"><img src="https://lh5.googleusercontent.com/uwSzKGbCdifIcxgfvxcZ5h1M7i7r3qGskCNpvojt9MPaWG4oDJkKXqJOorFQS348vr9ySVcvsF2GXXsgG3IgyjWxXZ8TUlP49vrpgTSKfSbUfo9rOEg_yGPWo4PjARevogd-JnY2FEGmeysjbSjqDVc" width="602" height="243"></p>
+             <p dir="ltr">Existen muchos Sistemas de Control de Versiones siendo algunos de los más conocidos CVS, Git, Subversion, Mercurial y Bazar.&nbsp;</p>
+             <p dir="ltr">Elegimos Git, porque es hoy en día uno de los sistemas más populares.</p>
+             <p dir="ltr"><img src="https://lh6.googleusercontent.com/L-tepR7AD_vjMWl6T8Go8jjbtOuxMh4sRpjNR23bWm5wKGgjQUaPurIw-fuvDopD6gFrDRzHuqCGiwjP-RtxaNfku27QW5BtXWW15BHU8gAmif3DLjRLRTpnFyeEtBi8UG7_u16rzjEDvioN1CkOKtE" width="602" height="351"></p>
+             <p dir="ltr"><img src="https://lh3.googleusercontent.com/juHLBUHJRNUAT8AKWnUW86HJMCubUPLKJc2iBBKPT326T-1PM_BSQJCKx4lQSr6qbbrN_T2_thZhg8Oyha1hgpduvQuzflShdpY9fll5qQ_3FBgFzkybcSblbAJdmEs-C1eEd_lb59MRDbKUJGx4cIE" width="353" height="148"></p>
+             <p dir="ltr">Git es un Sistema de control de versiones distribuido, que realiza un seguimiento de cada modificación realizada en el código a lo largo del tiempo, y le permite&nbsp; retroceder si es necesario y deshacer esos cambios. Git le permitirá volver a un estado anterior en un proyecto o ver toda su evolución desde que se creó el proyecto. Git también se llama gestión de código fuente.</p>
+             <p dir="ltr">Esto significa que cuando se realiza un cambio en un archivo, Git guardará la versión anterior y registrará exactamente qué modificaciones se hicieron.</p>
+             <p dir="ltr">Este proceso se repite cada vez que se modifica el archivo, lo que te permite volver a cada punto en el historial de un proyecto y recuperar fácilmente una versión específica. En pocas palabras, esto te brinda un número ilimitado de acciones de “deshacer”, para que nunca pierdas nada. Además, te permite a ti (y a otros) ver cómo se ha desarrollado un proyecto con el tiempo.</p><br><br><br>
+             <p dir="ltr"><img src="https://lh4.googleusercontent.com/FKNFliQOzQnq3cIF5fz5ZitNzLByrYKnoL39zZswqqecR8TrmBwjymkZE8ktABVeO__-28o9ZIxacLr8f1UWOmVy45DHi4cj1PXgid8MVKZNzsmnqBNfyFC_2LEx41fDIyNK0oI32kU1m1uZ4-ra2zI" width="602" height="393"></p>
+             <p dir="ltr"><br></p><br>
+            <h5></h5>
+            <p></p>
+            </div>
         </div>
+         <div class="section">
+        <h2>Clase 3 🚀</h2>
+<p>Apis </p>
+
+  <div id="buttonVS3" class="button" onclick="toggleContent('vscode3','buttonVS3')">Ver más</div>
+  <div id="vscode3" class="hidden-content">
+
+    <h2>Contenido de la Unidad U4</h2>
+    <h3><p dir="ltr"><img src="imagenes/api3.PNG" width="499" height="267"></p></h3>
+
+<h3>4. API</h3>
+<ul>
+  <li>4.1 - Protocolo de comunicación</li>
+  <li>4.2 - Contrato API</li>
+  <li>4.3 - Clasificación según acceso</li>
+  <li>4.4 - Clasificación según su aplicación</li>
+</ul>
+
+<h3>¿Qué son las API?</h3>
+<p>
+  Las API son mecanismos que permiten a dos componentes de software comunicarse entre sí mediante un conjunto de definiciones y protocolos.
+</p>
+<p>
+  Por ejemplo, el sistema de software del instituto de meteorología contiene datos meteorológicos diarios. 
+  La aplicación meteorológica de su teléfono “habla” con este sistema a través de las API y le muestra las actualizaciones meteorológicas diarias en su teléfono.
+</p>
+
+<h3>¿Qué significa?</h3>
+<p>
+  API significa “interfaz de programación de aplicaciones”. 
+  En este contexto, la palabra aplicación se refiere a cualquier software con una función distinta. 
+  La interfaz puede considerarse como un contrato de servicio entre dos aplicaciones. 
+  Este contrato define cómo se comunican entre sí mediante solicitudes y respuestas.
+</p>
+<p>
+  La documentación de una API contiene información sobre cómo los desarrolladores deben estructurar esas solicitudes y respuestas.
+</p>
+
+<h3>¿Cómo funcionan las API?</h3>
+<p>
+  La arquitectura de las API suele explicarse en términos de cliente y servidor. 
+  La aplicación que envía la solicitud se llama <strong>cliente</strong>, y la que envía la respuesta se llama <strong>servidor</strong>. 
+  En el ejemplo del tiempo, la base de datos meteorológica del instituto es el servidor y la aplicación móvil es el cliente.
+</p>
+<p>En general, el funcionamiento de una API es:</p>
+<ol>
+  <li>La API se aloja en un servidor y recibe solicitudes de otros sistemas.</li>
+  <li>El cliente envía una solicitud mediante un protocolo como HTTP.</li>
+  <li>La API procesa la solicitud y devuelve una respuesta (datos o acción).</li>
+  <li>La respuesta suele estar en formato estructurado como JSON o XML.</li>
+  <li>Puede incluir autenticación y autorización para controlar el acceso.</li>
+</ol>
+
+<h3>Protocolo de comunicación</h3>
+<ul>
+  <li><strong>HTTP:</strong> el más común, sencillo de implementar y compatible con cualquier lenguaje.</li>
+  <li><strong>REST:</strong> basado en HTTP, utiliza verbos como GET, POST, PUT y DELETE.</li>
+  <li><strong>SOAP:</strong> más complejo, usa XML. Común en entornos empresariales.</li>
+  <li><strong>GraphQL:</strong> permite definir qué datos recuperar, más flexible.</li>
+</ul>
+
+<h3>El contrato de la API</h3>
+<p>
+  Es un conjunto de reglas, especificaciones y documentación que describe cómo los clientes pueden interactuar con la API. 
+  Incluye sintaxis de solicitudes, tipos de datos, códigos de estado, parámetros, limitaciones, autenticación, etc.
+</p>
+
+<h3>¿Qué son las API docs?</h3>
+<p>
+  Son la documentación técnica de una API. Describen contrato, métodos, parámetros, códigos de respuesta y ejemplos de uso. 
+  Son clave para que los desarrolladores utilicen la API correctamente.
+</p>
+
+<h3>Clasificación de las API</h3>
+
+<h4>Según su acceso</h4>
+<ul>
+  <li><strong>APIs Privadas:</strong> uso interno dentro de una organización.</li>
+  <li><strong>APIs Públicas:</strong> disponibles para cualquier desarrollador.</li>
+</ul>
+
+<h4>Según su aplicación</h4>
+<ul>
+  <li><strong>APIs de datos:</strong> exponen conjuntos de datos (CRUD).</li>
+  <li><strong>APIs de sistemas operativos:</strong> permiten interactuar con funciones del SO.</li>
+  <li><strong>APIs Web:</strong> comunicación entre aplicaciones web vía HTTP.</li>
+</ul>
+
+<h3>Ejemplos de API</h3>
+<ul>
+  <li><a href="https://developer.paypal.com/api/rest/" target="_blank">PayPal API</a>: pagos en línea.</li>
+  <li><a href="https://developers.google.com/maps/documentation/routes" target="_blank">Google Maps API</a>: integración de mapas.</li>
+  <li><a href="https://openweathermap.org" target="_blank">OpenWeatherMap API</a>: datos meteorológicos.</li>
+  <li><a href="https://api.whatsapp.com/send?phone=541130397909" target="_blank">WhatsApp API</a>: envío de mensajes.</li>
+</ul>
+
+<h3>Fuentes</h3>
+<ul>
+  <li><a href="https://aws.amazon.com/es/what-is/api/" target="_blank">AWS - ¿Qué es una API?</a></li>
+</ul>
+</div>
     </div>
-        
-    <div class="section">
-        <h2>Metodologías Ágiles</h2>
-        <p>Gestión dinámica de proyectos</p>
-        <div id="buttonAgile" class="button" onclick="toggleContent('agileContent','buttonAgile')">Ver más</div>
-        <div id="agileContent" class="hidden-content">
-            <p>Las metodologías ágiles son marcos de trabajo iterativos utilizados para gestionar proyectos de forma flexible y eficiente, adaptándose a los cambios durante el ciclo de vida del proyecto.</p>
-            <ul>
-                <li>Los proyectos se dividen en sprints o iteraciones cortas, donde se planifica, desarrolla, prueba y entrega valor continuamente.</li>
-                <li>El enfoque ágil prioriza la colaboración cercana con el cliente, permitiendo recibir feedback constante y ajustarse a nuevas necesidades rápidamente.</li>
-                <li>Se entrega un producto funcional al final de cada sprint, lo que da visibilidad temprana y continua del proyecto.</li>
-            </ul>
-            <br>
-            <b>Fases del proceso iterativo en Agile:</b>
-            <ul>
-                <li><b>Planificación y requisitos:</b> Se define el objetivo general del proyecto y los requisitos necesarios para cada sprint.</li>
-                <li><b>Análisis y diseño:</b> Se desarrollan ideas y se crean prototipos, mockups o wireframes que servirán de base para la implementación.</li>
-                <li><b>Desarrollo e implementación:</b> El equipo trabaja en la primera iteración del producto, enfocándose en alcanzar los objetivos del sprint.</li>
-                <li><b>Pruebas:</b> Se ejecutan pruebas unitarias, de integración y de usuario para validar la funcionalidad del producto.</li>
-                <li><b>Evaluación y revisión:</b> Al final de cada sprint, el equipo evalúa los resultados y ajusta las estrategias para el siguiente ciclo.</li>
-                <li><b>Implementación:</b> El producto se pone en producción o se lanza al mercado tras varias iteraciones de desarrollo.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="section">
-        <h2>Scrum</h2>
-        <p>Fundamentos del Manifiesto Ágil y Scrum</p>
-        <div class="button" onclick="toggleContent('metodologiasAgiles')">Ver más</div>
-        <div id="metodologiasAgiles" class="hidden-content">
-            <h4>Manifiesto Ágil</h4>
-            <p>Creado en 2001, establece cuatro valores clave: individuos e interacciones sobre procesos y herramientas, software funcionando sobre documentación exhaustiva, colaboración con el cliente sobre negociación contractual, y respuesta ante el cambio sobre seguir un plan.</p>
-            
-            <h4>Scrum</h4>
-            <p>Un marco para la gestión ágil de proyectos que promueve auto-organización y colaboración. Sus principios incluyen transparencia de la información, inspección del proceso, y aceptación del cambio.</p>
-    
-            <h4>Roles en Scrum</h4>
-            <ul>
-                <li><b>Product Owner:</b> Define requisitos y prioridades del cliente.</li>
-                <li><b>Scrum Master:</b> Facilita al equipo y elimina obstáculos.</li>
-                <li><b>Development Team:</b> Se autoorganiza y toma decisiones sobre el trabajo.</li>
-            </ul>
-    
-            <h4>Eventos en Scrum</h4>
-            <ul>
-                <li><b>Sprint:</b> Iteración de trabajo con un tiempo definido.</li>
-                <li><b>Daily Scrum:</b> Reunión diaria para sincronización.</li>
-                <li><b>Retro:</b> Reflexión sobre el proceso de trabajo.</li>
-            </ul>
-    
-            <h4>Backlog</h4>
-            <p>Lista priorizada de tareas que guía el desarrollo, incluyendo el Product Backlog y el Sprint Backlog.</p>
-        </div>
-    </div>
-        
-    <div class="section">
-        <h2>APIs: Interfaz de Programación de Aplicaciones 📡</h2>
-        <p>Una API es un mecanismo que permite a diferentes componentes de software comunicarse entre sí.</p>
-        <div id="buttonAPI" class="button" onclick="toggleContent('apiContent','buttonAPI')">Ver más</div>
-        <div id="apiContent" class="hidden-content">
-            <h4>¿Qué es una API?</h4>
-            <p>API significa "Interfaz de Programación de Aplicaciones". Es un contrato de servicio que define cómo dos aplicaciones pueden interactuar mediante solicitudes y respuestas.</p>
-            
-            <h4>¿Cómo funcionan las APIs?</h4>
-            <ul>
-                <li>Las APIs suelen seguir un modelo de cliente-servidor.</li>
-                <li>El cliente envía una solicitud a la API, que está alojada en un servidor.</li>
-                <li>La API procesa la solicitud y devuelve una respuesta estructurada (JSON, XML, etc.).</li>
-                <li>Utilizan técnicas de autenticación para asegurar el acceso a los recursos.</li>
-            </ul>
-    
-            <h4>Protocolos de comunicación comunes</h4>
-            <ul>
-                <li><b>HTTP</b>: Protocolo más común para APIs web.</li>
-                <li><b>REST</b>: Arquitectura que utiliza los verbos HTTP para interactuar con los recursos.</li>
-                <li><b>SOAP</b>: Protocolo más complejo que usa XML para la comunicación.</li>
-                <li><b>GraphQL</b>: Permite a los clientes definir la estructura de los datos que necesitan.</li>
-            </ul>
-    
-            <h4>Tipos de APIs</h4>
-            <ul>
-                <li><b>APIs Privadas</b>: Uso interno de una organización.</li>
-                <li><b>APIs Públicas</b>: Disponibles para cualquier desarrollador.</li>
-                <li><b>APIs de Datos</b>: Proporcionan acceso a conjuntos de datos estructurados.</li>
-                <li><b>APIs de Sistemas Operativos</b>: Acceso a funciones del sistema operativo.</li>
-                <li><b>APIs Web</b>: Comunicación entre aplicaciones web.</li>
-            </ul>
-    
-            <h4>Documentación de APIs</h4>
-            <p>La <b>API doc</b> es la documentación técnica que detalla cómo interactuar con la API, incluyendo ejemplos de solicitudes y respuestas, parámetros y códigos de estado.</p>
-            
-        
-            <p>En este ejemplo, se hace una solicitud GET a la API de meteorología para obtener el clima en Madrid.</p>
-        </div>
-    </div>
-       
-       
         <div class="container">
             <img src="https://raw.githubusercontent.com/igorezequiel22/Sitio-Web-HTML-CSS/main/sitioweb-ezequiel/imges/unpaz_logo.png"
                 alt="Desarrollo Web" style="width: 300px;">
         </div>
     </div>
-    <script src="index.js"></script>
-</body>
+ <script src="scrpt.js"></script>
+ <script>
+ let currentSlide = 0;
+ const slides = document.querySelectorAll('#slider-oficiales .slide-oficiales');
+ const totalSlides = slides.length;
 
+ function showSlide(index) {
+   slides.forEach((slide, i) => {
+     slide.classList.toggle('active', i === index);
+   });
+ }
+
+ function nextSlide() {
+   currentSlide = (currentSlide + 1) % totalSlides;
+   showSlide(currentSlide);
+ }
+
+ // Cambia cada 4 segundos
+ setInterval(nextSlide, 3000);
+
+ // Mostrar el primero al cargar
+ showSlide(currentSlide);
+
+ // Controla que sólo un contenido "Ver más" esté abierto a la vez
+ let openContentId = null;
+ let openButtonId = null;
+
+ function toggleContent(contentId, buttonId = null) {
+   const content = document.getElementById(contentId);
+   const button = buttonId ? document.getElementById(buttonId) : null;
+
+   // Cierra contenido abierto distinto al actual (si existe)
+   if (openContentId && openContentId !== contentId) {
+     const openContent = document.getElementById(openContentId);
+     const openButton = openButtonId ? document.getElementById(openButtonId) : null;
+
+     if (openContent) openContent.style.display = "none";
+     if (openButton) openButton.innerHTML = "Ver más";
+   }
+
+   // Alterna visibilidad actual y texto botón
+   if (content.style.display === "block") {
+     content.style.display = "none";
+     if (button) button.innerHTML = "Ver más";
+     openContentId = null;
+     openButtonId = null;
+   } else {
+     content.style.display = "block";
+     if (button) button.innerHTML = "Ver menos";
+     openContentId = contentId;
+     openButtonId = buttonId;
+   }
+ }
+</script>
+</body>
 </html>

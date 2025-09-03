@@ -138,27 +138,3 @@ initEvents();
 
 
 
-function toggleContent(id) {
-  var content = document.getElementById(id);
-  if (content.style.display === "none") {
-      content.style.display = "block";
-
-  } else {
-      content.style.display = "none";
-  }
-}
-
-function toggleContent(id, button) {
-  var content = document.getElementById(id);
-  var buttonId = document.getElementById(button);
-
-  if (content.style.display === "none") {
-      content.style.display = "block";
-      buttonId.innerHTML  = "Ver menos";
-
-
-  } else {
-      content.style.display = "none";
-      buttonId.innerHTML  = "Ver más";
-  }
-}
