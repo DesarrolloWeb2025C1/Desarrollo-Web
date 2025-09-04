@@ -143,6 +143,12 @@ header
   background-position: center;  
   position: relative;
 }
+.carousel-oficiales .slide-oficiales {
+  background-size: contain !important; 
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
 
 
 .slides {
@@ -330,6 +336,7 @@ header
     padding: 10px;
     border-radius: 5px;
 
+    
   }@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap");
 
   .contenidogral {
