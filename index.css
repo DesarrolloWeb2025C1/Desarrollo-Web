@@ -329,40 +329,6 @@ header
     color: #fff;
     padding: 10px;
     border-radius: 5px;
-    /* Ajustar videos dentro del cuadro azul */
-#vscode3 iframe {
-  width: 100%;          /* se adapta al ancho disponible */
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9; /* mantiene proporción 16:9 */
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Ajustar imágenes en carrusel oficiales */
-.carousel-oficiales .slide-oficiales {
-  background-size: contain; /* evita que la imagen se expanda demasiado */
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Responsivo en celulares */
-@media (max-width: 600px) {
-  #vscode3 h2 {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .carousel-oficiales {
-    height: 220px; /* reduce altura del carrusel */
-  }
-
-  .carousel-oficiales .slide-oficiales {
-    max-height: 200px; /* límite para que no se expanda */
-  }
-}
-
 
   }@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap");
 
